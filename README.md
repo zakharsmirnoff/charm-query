@@ -50,7 +50,8 @@ The application is just an API service with the following endpoints:
 So, basically you will always get a json with data, source (can be either "generated", "db" or "manual") and query
 
 ### Quickstart:
-- You need to set environment variables in .env file:
+- Clone the repo
+- Set environment variables in .env file:
 ```text
 OPENAI_API_KEY=<your openai_key>
 DB_PATH=<connection string to your db>
@@ -58,11 +59,16 @@ DB_COLLECTION_NAME=<the name of your db which will create a class/collection in 
 DB_DRIVER=sqlite3
 SCHEMA_QUERY=<sql query to fetch the schema of your db> #optional, will be generated if not specified
 ```
-- Then run Docker compose: 
+- Then run Docker compose to start Weaviate: 
 ```bash
 docker compose up -d
 ```
-- If you want to build Go files, you need to modify/delete/move so it won't conflict with the Go binary
+- Then build and start Go service (*later it will be combined in one docker-compose file*)
+```bash
+docker build -t charm-query
+docker run --env-file ./.env -p 5000:5000 charm-query
+```
+- If you want to build Go files, you need to modify/delete/move the files so it won't conflict with the Go binary
 
 This app is not meant to be deployed to production (unless you are absolutely confident in what you are doing), rather than serve as a starting point to explore LLM capabilities to translate
 natural language to SQL, improved with vector search.
