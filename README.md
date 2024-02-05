@@ -71,10 +71,10 @@ docker compose up -d
 This app is not meant to be deployed to production (unless you are absolutely confident in what you are doing), rather than serve as a starting point to explore LLM capabilities to translate
 natural language to SQL, improved with vector search.
 
-The following application uses the following stack: 
+The application uses the following stack: 
 - BYOF (bring your own frontend *lol, I just made this term up, it's actually just naked API*)
 - Weaviate for vector search
 - OpenAI API (default LLM is gpt-4, default model for embeddings is text-ada-002)
 - Virtually any SQL database is supported if you *go get* the necessary driver. Supported drivers are listed here: https://go.dev/wiki/SQLDrivers
 
-This service is a work in progress, so imminent and drastic changes are very much possible
+__This service is a work in progress, so imminent and drastic changes are very much possible__
