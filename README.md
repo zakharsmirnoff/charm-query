@@ -59,14 +59,9 @@ DB_COLLECTION_NAME=<the name of your db which will create a class/collection in 
 DB_DRIVER=sqlite3
 SCHEMA_QUERY=<sql query to fetch the schema of your db> #optional, will be generated if not specified
 ```
-- Then run Docker compose to start Weaviate: 
+- Then run Docker compose to start Weaviate and CharmQuery: 
 ```bash
 docker compose up -d
-```
-- Then build and start Go service (*later it will be combined in one docker-compose file*)
-```bash
-docker build -t charm-query
-docker run --env-file ./.env -p 5000:5000 charm-query
 ```
 - If you want to build Go files, you need to modify/delete/move the files so it won't conflict with the Go binary
 
