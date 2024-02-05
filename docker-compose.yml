@@ -26,12 +26,14 @@ services:
       DEFAULT_VECTORIZER_MODULE: 'text2vec-openai'
       ENABLE_MODULES: 'text2vec-openai'
       CLUSTER_HOSTNAME: 'node1'
-  new_service:
+  charm_query:
     build: .
-    ports:
-    - 5000:5000
+    depends_on:
+      - weaviate
     env_file:
-    - .env
+      - .env
+    ports:
+      - 5000:5000
 volumes:
   weaviate_data:
 ...
