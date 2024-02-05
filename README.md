@@ -1,6 +1,7 @@
 ## Charm Query
 This repository contains the code for the Go microservice which works as a middle service between your frontend application and the database. 
 It's meant to test the hypothesis I describe here: 
+
 *In short: translating plain English to SQL*
 
 Demo
@@ -8,6 +9,7 @@ Demo
 [streamlit-main-2024-02-05-13-02-80.webm](https://github.com/zakharsmirnoff/charm-query/assets/89240654/5dc615c9-c9f4-4842-99ff-0e54e5c9ab10)
 
 *This demo is recorded using a Python version of the app, you can find it here: https://github.com/zakharsmirnoff/charm-query-py*
+
 *Go version doesn't have frontend and it's using a different stack, though the functionality is almost the same*
 
 The application is just an API service with the following endpoints: 
