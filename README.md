@@ -1,6 +1,6 @@
 ## Charm Query
 This repository contains the code for the Go microservice which works as a middle service between your frontend application and the database. 
-It's meant to test the hypothesis I describe here: 
+It's meant to test the hypothesis I describe here: https://dev.to/zakharsmirnoff/text-to-sql-translator-improved-with-vector-search-4km4
 
 *In short: translating plain English to SQL*
 
