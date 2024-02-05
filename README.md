@@ -1,4 +1,4 @@
-## Charm Query (python version)
+## Charm Query
 This repository contains the code for the Go microservice which works as a middle service between your frontend application and the database. 
 It's meant to test the hypothesis I describe here: 
 *In short: translating plain English to SQL*
